@@ -1,0 +1,22 @@
+<!-- 这是自定义组件的内部WXML结构 -->
+<view class="shop-card">
+    <view class="pic-container">
+        <image class="pic" src="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg" />
+    </view>
+    <view class="detail-container">
+        <view class="title-container">
+            <view class="title">
+                东北烧烤
+            </view>  
+            <zan-capsule color="#38f" leftText="评分" rightText="3.5" />    
+        </view>   
+        <view class="intro">
+            [樱花广场]这是一段简介，会很长很长，还会换行，长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长。
+        </view>  
+        <view class="tel">
+           <zan-icon type="phone"></zan-icon>
+           15651672345 
+        </view>
+    </view>
+</view>
+<slot></slot>

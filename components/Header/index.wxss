@@ -1,0 +1,45 @@
+.header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: #06c1ae;
+    padding-left: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.left-container {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.input-container {
+    display: flex;
+    width: 80vw;
+    background-color: #68dbce;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 3px;
+    
+}
+.input-icon {
+    color: #fff;
+}
+.input {
+    margin-left: 8px;
+    font-size: 13px;
+    line-height: 32px;
+}
+.right-container {
+    margin-right: 24px;
+}
+.user-text{
+    color: #fff;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+}
+.user-icon {
+    font-weight: 400;
+    font-size: 23px;
+    color: #fff;
+}

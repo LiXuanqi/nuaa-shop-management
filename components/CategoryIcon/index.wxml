@@ -1,0 +1,6 @@
+<view class="category-icon">
+    <view class="icon-container">
+        <zan-icon type="shop-collect"></zan-icon>     
+    </view>
+    <view class="text">美食</view>
+</view>
