@@ -1,0 +1,13 @@
+.nav-icon{
+    width: 50vw;
+    margin-top: 4px;
+}
+.icon {
+    text-align: center;
+    color: #999999;
+}
+.text {
+    font-size: 12px;
+    text-align: center;
+    color: #999999;
+}

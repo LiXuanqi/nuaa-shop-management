@@ -1,4 +1,15 @@
 
 <view>
+    <view class="cell-container">
+        <zan-cell title="全部评价" is-link url="/pages/dashboard/index"></zan-cell>
+    </view>
+    <view class="cell-container">
+        <zan-cell title="待回复" is-link url="/pages/dashboard/index"></zan-cell>
+    </view>
+    <view class="cell-container">
+        <zan-cell title="已回复" is-link url="/pages/dashboard/index"></zan-cell>
+    </view>
+  
+
 
 </view>

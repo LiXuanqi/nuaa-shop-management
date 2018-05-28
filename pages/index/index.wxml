@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="container">
+<view class="index-container">
     <header></header>
     <view class="categories-container">
         <category-icon></category-icon>
@@ -12,11 +12,16 @@
     </view>
     <view class="cards-container">
         <view class="cards-container-title">
-            附近商家
+           <view class="slash"></view>
+           <view class="text">
+               附近商家
+           </view>
+           <view class="slash"></view>
         </view>
         <shop-card></shop-card>
         <shop-card></shop-card>
         <shop-card></shop-card>
         <shop-card></shop-card>
     </view>
+    <footer></footer>
 </view>

@@ -1,16 +1,11 @@
 <view class="header">
-    <view class="left-container">
+    <view class="text">
+        南航商铺管理系统
+    </view>
+    <view class="search-container">
         <view class="input-container">
             <zan-icon class="input-icon" type="edit"></zan-icon>
             <input class="input" placeholder="输入商家/品类/商圈" auto-focus/> 
         </view>   
     </view>
-    <navigator url="/pages/user/user" hover-class="navigator-hover">
-    <view class="right-container">
-        <zan-icon class="user-icon" type="contact"></zan-icon>
-        <view class="user-text">
-            我的
-        </view>
-    </view>
-    </navigator>
 </view>
