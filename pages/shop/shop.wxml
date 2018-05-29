@@ -1,0 +1,40 @@
+<view class="shop-page">
+    <intro-card></intro-card>
+    <zan-tab
+        list="{{ tabList }}"
+        selected-id="{{ selectedTabId }}"
+        bindtabchange="handleTabChanged"
+    />
+    <!-- 商家 -->
+    <view wx:if="{{ selectedTabId === '1' }}">
+        <view class="cell">
+            <zan-cell title="电话" value="15645782368"></zan-cell>
+        </view>
+        <view class="cell">
+            <zan-cell title="营业时间" value="09:00 ~ 23:59"></zan-cell>
+        </view>
+        <view class="cell">
+            <view class="intro-text">
+                这是一段很长很长的介绍，很长很长的介绍，很长很长的介绍，很长很长的介绍，很长很长的介绍，很长很长的介绍，很长很长的介绍，很长很长的介绍，很长很长的介绍，很长很长的介绍，很长很长的介绍，很长很长的介绍。    
+            </view>
+        </view>
+    </view>
+    <!-- 评价 -->
+    <view wx:if="{{ selectedTabId === '2' }}">
+        <view class="cell">
+            <zan-cell title="总评分" value="4.5"></zan-cell>
+        </view>
+        <view class="comment-cards-container">
+            <comment-card />
+            <comment-card />
+            <comment-card />
+        </view>  
+    </view>
+
+        <view class="button">
+            <zan-button type="primary" bindtap="handleButtonClicked">我要评论</zan-button>    
+        </view>
+ 
+
+
+</view>

@@ -9,7 +9,7 @@ padding-top: 50px;
   padding-bottom: 8px;
 }
 .cards-container {
-  /* background-color: #f0efed; */
+  background-color: #F4F4F4;
 
 }
 .slash {

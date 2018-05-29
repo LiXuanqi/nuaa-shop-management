@@ -1,0 +1,26 @@
+<view class="comment-card">
+    <view>
+       <image class="icon" src="/static/avatar.jpg" />
+    </view>
+    <view class="right-container">
+        <view class="top-container"> 
+            <view class="username">
+                匿名用户
+            </view>
+            <view class="time">
+                2018.05.13
+            </view>  
+        </view>
+
+        <view class="tags-container">
+            <zan-capsule color="#38f" leftText="评分" rightText="3.5" />
+        </view>
+      
+        <view class="content">
+            这家店好坑啊，吃了好多次，老板从来不收我的钱，这样的店迟早要倒闭，建议大家千万不要去吃。 这家店好坑啊，吃了好多次，老板从来不收我的钱，这样的店迟早要倒闭，建议大家千万不要去吃。 这家店好坑啊，吃了好多次，老板从来不收我的钱.
+        </view>
+        <view class="reply">
+            商家回复（10天后）：尊敬的顾客您好！非常感谢您能选择小店用餐非常感谢您能选择小店用餐非常感谢您能选择小店用餐非常感谢您能选择小店用餐非常感谢您能选择小店用餐非常感谢您能选择小店用餐非常感谢您能选择小店用餐。
+        </view>
+    </view>
+</view>

@@ -2,26 +2,45 @@
 <view class="index-container">
     <header></header>
     <view class="categories-container">
-        <category-icon></category-icon>
-        <category-icon></category-icon>
-        <category-icon></category-icon>
-        <category-icon></category-icon>
-        <category-icon></category-icon>
-        <category-icon></category-icon>
-        <category-icon></category-icon>
+        <category-icon icon="points" text="美食"></category-icon>
+        <category-icon icon="logistics" iconColor="linear-gradient(120deg, #f6d365 0%, #fda085 100%)" text="文印"></category-icon>
+        <category-icon icon="gift" text="杂货"></category-icon>
+        <category-icon icon="wap-home" text="生活"></category-icon>
+        <category-icon icon="free-postage" text="生活"></category-icon>
+        <category-icon icon="shop-collect" text="生活"></category-icon>
+        <category-icon icon="after-sale" text="生活"> </category-icon>
     </view>
-    <view class="cards-container">
-        <view class="cards-container-title">
-           <view class="slash"></view>
-           <view class="text">
-               附近商家
-           </view>
-           <view class="slash"></view>
+
+    <view class="cards-container-title">
+        <view class="slash"></view>
+        <view class="text">
+            附近商家
         </view>
-        <shop-card></shop-card>
-        <shop-card></shop-card>
-        <shop-card></shop-card>
-        <shop-card></shop-card>
+        <view class="slash"></view>
     </view>
-    <footer></footer>
+
+    <view class="cards-container">    
+        <shop-card
+            sid="1"
+            name="学生超市"
+            intro="[樱花广场]这是一个什么都能买到的无敌超市。"
+            tel="12345678901"
+            pic="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg"
+        ></shop-card>
+        <shop-card
+            sid="2"
+            name="学生超市"
+            intro="[樱花广场]这是一个什么都能买到的无敌超市。"
+            tel="12345678901"
+            pic="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg"
+        ></shop-card>
+        <shop-card
+            sid="3"
+            name="学生超市"
+            intro="[樱花广场]这是一个什么都能买到的无敌超市。"
+            tel="12345678901"
+            pic="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg"
+        ></shop-card>
+    </view>
+    
 </view>

@@ -1,6 +1,0 @@
-<view class="nav-icon">
-    <view class="icon">
-        <zan-icon type="contact"></zan-icon>     
-    </view>
-    <view class="text">我的</view>
-</view>

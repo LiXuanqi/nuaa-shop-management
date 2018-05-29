@@ -7,7 +7,7 @@ Component({
       }
     },
     data: {
-      
+      appName: "南航店铺管理系统"
     },
     methods: {
       // 这里是一个自定义方法

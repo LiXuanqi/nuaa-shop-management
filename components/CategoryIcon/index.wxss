@@ -7,7 +7,7 @@
     margin-bottom: 8px;
 }
 .icon-container {
-    background-color: #fd9d21;
+   
     width: 40px;
     height: 40px;
     border-radius: 50%;

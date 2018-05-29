@@ -2,8 +2,26 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/comment/comment",
+    "pages/shop/shop",
+    "pages/form/form"
   ],
+  "tabBar": {
+    "selectedColor": "#00b300",
+    "color": "#bfbfbf",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "static/index-grey.png",
+      "selectedIconPath": "static/index-green.png"
+    },{
+      "pagePath": "pages/comment/comment",
+      "text": "我的",
+      "iconPath": "static/user-grey.png",
+      "selectedIconPath": "static/user-green.png"
+    }]
+  },
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",

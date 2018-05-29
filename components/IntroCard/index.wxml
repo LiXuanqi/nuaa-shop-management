@@ -1,0 +1,22 @@
+    <view class="intro-card">
+        <image class="pic" src="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg" />
+        <view class="right-container">
+            <view class="tags-container">
+                <view class="tag">
+                    <zan-tag type="primary">樱花广场</zan-tag>   
+                </view>   
+                <view class="tag">
+                    <zan-tag type="primary">生活类</zan-tag>  
+                </view> 
+            </view>
+     
+            <view class="zan-ellipsis">
+                介绍：这是一段很长的介绍，介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍。
+            </view>
+    
+            <view class="tel">
+                <zan-icon type="phone"></zan-icon>
+                15651672357
+            </view>
+        </view>
+    </view>

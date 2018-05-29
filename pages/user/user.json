@@ -2,6 +2,7 @@
     "navigationBarTitleText": "用户中心",
     "usingComponents": {
         "zan-cell": "/components/zanui-weapp/dist/cell/index",
+        "zan-cell-group": "/components/zanui-weapp/dist/cell-group/index",
         "category-icon": "/components/CategoryIcon/index"
     }
 }

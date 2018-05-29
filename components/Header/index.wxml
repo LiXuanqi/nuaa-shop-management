@@ -1,6 +1,6 @@
 <view class="header">
     <view class="text">
-        南航商铺管理系统
+        {{ appName }}
     </view>
     <view class="search-container">
         <view class="input-container">
