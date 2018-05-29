@@ -7,7 +7,7 @@
     "pages/form/form"
   ],
   "tabBar": {
-    "selectedColor": "#00b300",
+    "selectedColor": "#00b300", 
     "color": "#bfbfbf",
     "list": [{
       "pagePath": "pages/index/index",
@@ -28,3 +28,4 @@
     "navigationBarTextStyle":"black"
   }
 }
+

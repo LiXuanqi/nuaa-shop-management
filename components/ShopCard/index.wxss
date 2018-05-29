@@ -7,18 +7,20 @@
 }
 .pic-container {
   margin: 8px;
+
 }
 .detail-container {
   margin-right: 8px;
   margin-bottom: 8px;
+  width: 80vw;
 }
 .title-container {
   display: flex;
   justify-content: space-between;
 }
 .pic {
-  width: 93px;
-  height: 70px;
+  width: 20vw;
+  height: 17vw;
 }
 .title {
   font-size: 15px;
