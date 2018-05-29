@@ -3,20 +3,20 @@
         <view class="right-container">
             <view class="tags-container">
                 <view class="tag">
-                    <zan-tag type="primary">樱花广场</zan-tag>   
+                    <zan-tag type="primary">{{ position }}</zan-tag>   
                 </view>   
                 <view class="tag">
-                    <zan-tag type="primary">生活类</zan-tag>  
+                    <zan-tag type="primary">{{ category }}类</zan-tag>  
                 </view> 
             </view>
      
             <view class="zan-ellipsis">
-                介绍：这是一段很长的介绍，介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍。
+                {{ intro }}
             </view>
     
             <view class="tel">
                 <zan-icon type="phone"></zan-icon>
-                15651672357
+                {{ tel }}
             </view>
         </view>
     </view>

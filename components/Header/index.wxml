@@ -5,7 +5,7 @@
     <view class="search-container">
         <view class="input-container">
             <zan-icon class="input-icon" type="edit"></zan-icon>
-            <input class="input" placeholder="输入商家/品类/商圈" auto-focus/> 
+            <input class="input" placeholder="输入商家/商圈" auto-focus/> 
         </view>   
     </view>
 </view>

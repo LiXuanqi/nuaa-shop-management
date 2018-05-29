@@ -1,5 +1,10 @@
 <view class="shop-page">
-    <intro-card></intro-card>
+    <intro-card
+        position="{{ position }}"
+        category="{{ category }}"
+        intro="{{ intro }}"
+        tel="{{ tel }}"
+    ></intro-card>
     <zan-tab
         list="{{ tabList }}"
         selected-id="{{ selectedTabId }}"
@@ -8,14 +13,14 @@
     <!-- 商家 -->
     <view wx:if="{{ selectedTabId === '1' }}">
         <view class="cell">
-            <zan-cell title="电话" value="15645782368"></zan-cell>
+            <zan-cell title="电话" value="{{ tel }}"></zan-cell>
         </view>
         <view class="cell">
-            <zan-cell title="营业时间" value="09:00 ~ 23:59"></zan-cell>
+            <zan-cell title="营业时间" value="{{ workTime }}"></zan-cell>
         </view>
         <view class="cell">
             <view class="intro-text">
-                这是一段很长很长的介绍，很长很长的介绍，很长很长的介绍，很长很长的介绍，很长很长的介绍，很长很长的介绍，很长很长的介绍，很长很长的介绍，很长很长的介绍，很长很长的介绍，很长很长的介绍，很长很长的介绍。    
+                {{ intro }}    
             </view>
         </view>
     </view>
@@ -25,9 +30,30 @@
             <zan-cell title="总评分" value="4.5"></zan-cell>
         </view>
         <view class="comment-cards-container">
-            <comment-card />
-            <comment-card />
-            <comment-card />
+            <comment-card
+                username="Moved"
+                date="2018-05-21"
+                mark="3.7"
+                comment="这是长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长评论。"
+                replyTime="9"
+                reply="尊敬的用户，我们已经收到您的消息，我们已经收到您的消息我们已经收到您的消息。"
+            />
+            <comment-card
+                username="Moved"
+                date="2018-05-21"
+                mark="3.7"
+                comment="这是长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长评论。"
+                replyTime="9"
+                reply="尊敬的用户，我们已经收到您的消息，我们已经收到您的消息我们已经收到您的消息。"
+            />
+            <comment-card
+                username="Moved"
+                date="2018-05-21"
+                mark="3.7"
+                comment="这是长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长评论。"
+                replyTime="9"
+                reply="尊敬的用户，我们已经收到您的消息，我们已经收到您的消息我们已经收到您的消息。"
+            />
         </view>  
     </view>
 

@@ -1,6 +1,10 @@
 
 <view class="user-page">
-    <user-card />
+    <user-card
+        username="Move or Die"
+        tel="15632451678"
+        pic="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg"
+    ></user-card>
 <!--
     <view class="reply-action-container">
         <view class="cell-container">
@@ -27,9 +31,22 @@
     />
 
     <view class="comment-cards-container">
-        <comment-card />
-        <comment-card />
-        <comment-card />
+        <comment-card
+            username="Moved"
+            date="2018-05-21"
+            mark="3.7"
+            comment="这是长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长评论。"
+            replyTime="9"
+            reply="尊敬的用户，我们已经收到您的消息，我们已经收到您的消息我们已经收到您的消息。"
+        />
+        <comment-card
+            username="Moved"
+            date="2018-05-21"
+            mark="3.7"
+            comment="这是长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长评论。"
+            replyTime="9"
+            reply="尊敬的用户，我们已经收到您的消息，我们已经收到您的消息我们已经收到您的消息。"
+        />
     </view>  
 
  
