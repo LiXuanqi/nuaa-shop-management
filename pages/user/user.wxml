@@ -1,5 +1,7 @@
 
 <view class="user-page">
+    <user-card />
+<!--
     <view class="reply-action-container">
         <view class="cell-container">
             <zan-cell title="全部评价" is-link url="/pages/dashboard/index"></zan-cell>
@@ -17,7 +19,18 @@
             <zan-cell title="客服电话" is-link url="/pages/dashboard/index"></zan-cell>
         </view>   
     </view>
- 
+-->
+     <zan-tab
+        list="{{ tabList }}"
+        selected-id="{{ selectedTabId }}"
+        bindtabchange="handleTabChanged"
+    />
+
+    <view class="comment-cards-container">
+        <comment-card />
+        <comment-card />
+        <comment-card />
+    </view>  
 
  
   

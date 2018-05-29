@@ -3,7 +3,6 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/user/user",
-    "pages/comment/comment",
     "pages/shop/shop",
     "pages/form/form"
   ],
@@ -16,7 +15,7 @@
       "iconPath": "static/index-grey.png",
       "selectedIconPath": "static/index-green.png"
     },{
-      "pagePath": "pages/comment/comment",
+      "pagePath": "pages/user/user",
       "text": "我的",
       "iconPath": "static/user-grey.png",
       "selectedIconPath": "static/user-green.png"

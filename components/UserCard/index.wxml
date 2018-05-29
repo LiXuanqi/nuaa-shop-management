@@ -1,0 +1,15 @@
+    <view class="intro-card">
+        <image class="pic" src="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg" />
+        <view class="right-container">
+           
+     
+            <view class="username">
+                Move or Die  
+            </view>
+    
+            <view class="tel">
+                <zan-icon type="phone"></zan-icon>
+                15651672357
+            </view>
+        </view>
+    </view>

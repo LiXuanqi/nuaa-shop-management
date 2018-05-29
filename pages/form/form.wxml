@@ -1,0 +1,24 @@
+<view class="form-page">
+    <view class="form-card">
+        <view class="top-container">
+            <view>
+                <image class="pic" src="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg" />
+            </view>
+            <view class="shop-name">
+                教育超市
+            </view>    
+        </view>
+        <form bindsubmit="formSubmit" bindreset="formReset">
+            <zan-cell title="评分">
+                <slider name="slider" min="0" max="5" step="0.1" show-value ></slider>  
+            </zan-cell>          
+            <view class="input">
+                <input placeholder="哪里不满意吗，写评论告诉我们"/>    
+            </view>
+            <view class="button">
+                <button type="primary" formType="submit">提交</button>
+            </view>
+        
+        </form>
+    </view>
+</view>
