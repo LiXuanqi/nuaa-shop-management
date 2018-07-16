@@ -19,27 +19,14 @@
         <view class="slash"></view>
     </view>
 
-    <view class="cards-container">    
+    <view class="cards-container"  wx:for="{{shopsList}}">     
         <shop-card
-            sid="1"
-            name="学生超市"
-            intro="[樱花广场]这是一个什么都能买到的无敌超市。"
-            tel="12345678901"
-            pic="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg"
-        ></shop-card>
-        <shop-card
-            sid="2"
-            name="学生超市"
-            intro="[樱花广场]这是一个什么都能买到的无敌超市。"
-            tel="12345678901"
-            pic="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg"
-        ></shop-card>
-        <shop-card
-            sid="3"
-            name="学生超市"
-            intro="[樱花广场]这是一个什么都能买到的无敌超市。"
-            tel="12345678901"
-            pic="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg"
+            sid="{{item.sid}}"
+            name="{{item.name}}"
+            intro="[{{item.address}}]{{item.intro}}"
+            tel="{{item.tel}}"
+            pic="{{item.pic}}"
+            meanMark="{{item.meanMark}}"
         ></shop-card>
     </view>
     

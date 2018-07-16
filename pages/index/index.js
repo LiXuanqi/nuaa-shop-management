@@ -4,18 +4,13 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
-  },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    shopsList: []
   },
   onLoad: function () {
+    this.getShopsInfo();
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -49,6 +44,17 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
+    })
+  },
+  getShopsInfo: function() {
+    wx.request({
+      url: 'https://nuaashop.yuwenjie.cc/?service=App.Shop.AllShops',
+      success: ({ data }) => {
+        console.log(data)
+        this.setData({
+          shopsList: data['data']
+        })
+      }
     })
   }
 })

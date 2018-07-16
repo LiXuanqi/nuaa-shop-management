@@ -19,6 +19,9 @@ Component({
       pic: {
         type: String,
         value: "https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg"
+      },
+      meanMark: {
+        type: Number
       }
     },
     data: {

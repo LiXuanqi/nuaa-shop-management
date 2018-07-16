@@ -9,7 +9,7 @@
                 <view class="title">
                     {{ name }}
                 </view>  
-                <zan-capsule color="#38f" leftText="评分" rightText="3.5" />    
+                <zan-capsule color="#38f" leftText="评分" rightText="{{meanMark}}" />    
             </view>   
             <view class="intro">
                 {{ intro }}
