@@ -17,7 +17,10 @@ Component({
       replyTime: {
         type: Number
       },
-      reply: {
+      ownerReply: {
+        type: String
+      },
+      adminReply: {
         type: String
       }
     },

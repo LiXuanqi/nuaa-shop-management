@@ -27,32 +27,20 @@
     <!-- 评价 -->
     <view wx:if="{{ selectedTabId === '2' }}">
         <view class="cell">
-            <zan-cell title="总评分" value="4.5"></zan-cell>
+            <zan-cell title="总评分" value="{{meanMark}}"></zan-cell>
+            <zan-cell title="环境质量" value="{{envMark}}"></zan-cell>
+            <zan-cell title="服务态度" value="{{serviceMark}}"></zan-cell>
+            <zan-cell title="货品质量" value="{{qualityMark}}"></zan-cell>
         </view>
-        <view class="comment-cards-container">
+        <view class="comment-cards-container" wx:for="{{comments}}">
             <comment-card
-                username="Moved"
-                date="2018-05-21"
-                mark="3.7"
-                comment="这是长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长评论。"
-                replyTime="9"
-                reply="尊敬的用户，我们已经收到您的消息，我们已经收到您的消息我们已经收到您的消息。"
-            />
-            <comment-card
-                username="Moved"
-                date="2018-05-21"
-                mark="3.7"
-                comment="这是长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长评论。"
-                replyTime="9"
-                reply="尊敬的用户，我们已经收到您的消息，我们已经收到您的消息我们已经收到您的消息。"
-            />
-            <comment-card
-                username="Moved"
-                date="2018-05-21"
-                mark="3.7"
-                comment="这是长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长评论。"
-                replyTime="9"
-                reply="尊敬的用户，我们已经收到您的消息，我们已经收到您的消息我们已经收到您的消息。"
+                username="{{item.username}}"
+                date="{{item.date}}"
+                mark="{{item.meanMark}}"
+                comment="{{item.content}}"
+                replyTime="待写"
+                ownerReply="{{item.ownerReply}}}"
+                adminReply="{{item.adminReply}}"
             />
         </view>  
     </view>

@@ -8,6 +8,11 @@ Page({
       category: "生活",
       position: "樱花广场",
       workTime: "09:00 ~ 23:59",
+      meanMark: "100",
+      envMark: "99",
+      serviceMark: "98",
+      qualityMark: "97",
+      comments: [],
       tabList: [{
         id: '1',
         title: '商家'
@@ -18,9 +23,8 @@ Page({
       selectedTabId: '1',
     },
     onLoad: function (query) {
-      this.setData({
-        sid: query.id
-      })
+      this.getShopInfo(query.id)
+      this.getComments(query.id)
       //fetch data from api.
       wx.setNavigationBarTitle({
         title: this.data.name
@@ -32,6 +36,38 @@ Page({
           duration: 400,
           timingFunc: 'easeIn'
        }
+      })
+    },
+    getShopInfo: function(sid) {
+      wx.request({
+        url: `https://nuaashop.yuwenjie.cc/?service=App.Shop.GetShop&id=${sid}`,
+        success: ({ data }) => {
+          const { sid, name, intro, tel, category, address, workStartTime, workEndTime, meanMark, envMark, serviceMark, qualityMark} = data['data'];
+          this.setData({
+            sid: sid,
+            name: name,
+            intro: intro,
+            tel: tel,
+            category: category,
+            position: address,
+            workTime: `${workStartTime} ~ ${workEndTime}`,
+            meanMark: meanMark,
+            envMark: envMark,
+            serviceMark: serviceMark,
+            qualityMark: qualityMark,
+          })
+        }
+      })
+    },
+    getComments: function(sid) {
+      wx.request({
+        url: `https://nuaashop.yuwenjie.cc/?service=App.Shop.GetComment&shopid=${sid}`,
+        success: ({ data }) => {
+          console.log(data)
+          this.setData({
+            comments: data['data']
+          })
+        }
       })
     },
     handleTabChanged: function (e) {
