@@ -1,3 +1,4 @@
+import moment from '../../utils/moment';
 
 Page({
     data: {
@@ -64,8 +65,19 @@ Page({
         url: `https://nuaashop.yuwenjie.cc/?service=App.Shop.GetComment&shopid=${sid}`,
         success: ({ data }) => {
           console.log(data)
+          let formatedData = data['data'].map((item) => {
+            console.log(item.adminReplyStatus);
+            console.log(item.ownerReplyStatus);
+            return {
+              ...item,
+              date: item.date.split(" ")[0],
+              adminReplyStatus: moment(parseInt(item.adminReplyStatus)).startOf('day').fromNow().split(" ")[0], // calculate interval of days.
+              ownerReplyStatus: moment(parseInt(item.ownerReplyStatus)).startOf('day').fromNow().split(" ")[0],
+            }
+          }) 
+          console.log(formatedData)
           this.setData({
-            comments: data['data']
+            comments: formatedData
           })
         }
       })

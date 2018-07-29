@@ -38,9 +38,10 @@
                 date="{{item.date}}"
                 mark="{{item.meanMark}}"
                 comment="{{item.content}}"
-                replyTime="待写"
                 ownerReply="{{item.ownerReply}}}"
+                ownerReplyTime="{{item.ownerReplyStatus}}"
                 adminReply="{{item.adminReply}}"
+                adminReplyTime="{{item.adminReplyStatus}}"
             />
         </view>  
     </view>

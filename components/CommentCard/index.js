@@ -14,14 +14,17 @@ Component({
       comment: {
         type: String
       },
-      replyTime: {
-        type: Number
-      },
       ownerReply: {
         type: String
       },
+      ownerReplyTime: {
+        type: Number
+      },
       adminReply: {
         type: String
+      },
+      adminReplyTime: {
+        type: Number
       }
     },
     data: {

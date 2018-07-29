@@ -10,16 +10,16 @@
         </view>
         <form bindsubmit="formSubmit" bindreset="formReset">
             <zan-cell title="环境质量">
-                <slider name="slider" min="0" max="5" step="0.1" show-value ></slider>  
+                <slider name="envMark" min="0" max="5" step="0.1" show-value ></slider>  
             </zan-cell>    
             <zan-cell title="服务态度">
-                <slider name="slider" min="0" max="5" step="0.1" show-value ></slider>  
+                <slider name="serviceMark" min="0" max="5" step="0.1" show-value ></slider>  
             </zan-cell>   
             <zan-cell title="货品品质">
-                <slider name="slider" min="0" max="5" step="0.1" show-value ></slider>  
+                <slider name="qualityMark" min="0" max="5" step="0.1" show-value ></slider>  
             </zan-cell>         
             <view class="input">
-                <input placeholder="哪里不满意吗，写评论告诉我们"/>    
+                <input name="content" placeholder="哪里不满意吗，写评论告诉我们"/>    
             </view>
             <view class="button">
                 <button type="primary" formType="submit">提交</button>

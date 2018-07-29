@@ -20,10 +20,10 @@
             {{ comment }}
         </view>
         <view class="reply">
-             {{ "商家回复(" + replyTime + "天后)：" + ownerReply }}
+             {{ "商家回复(" + ownerReplyTime + "天后)：" + ownerReply }}
         </view>
         <view class="reply">
-             {{ "管委会回复(" + replyTime + "天后)：" + adminReply }}
+             {{ "管委会回复(" + adminReplyTime + "天后)：" + adminReply }}
         </view>
     </view>
 </view>
