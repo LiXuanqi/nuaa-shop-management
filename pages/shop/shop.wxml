@@ -32,18 +32,21 @@
             <zan-cell title="服务态度" value="{{serviceMark}}"></zan-cell>
             <zan-cell title="货品质量" value="{{qualityMark}}"></zan-cell>
         </view>
-        <view class="comment-cards-container" wx:for="{{comments}}">
-            <comment-card
-                username="{{item.username}}"
-                date="{{item.date}}"
-                mark="{{item.meanMark}}"
-                comment="{{item.content}}"
-                ownerReply="{{item.ownerReply}}}"
-                ownerReplyTime="{{item.ownerReplyStatus}}"
-                adminReply="{{item.adminReply}}"
-                adminReplyTime="{{item.adminReplyStatus}}"
-            />
-        </view>  
+        <view class="comment-cards-container">
+            <view class="comment-card-container" wx:for="{{comments}}">
+                <comment-card
+                    username="{{item.username}}"
+                    date="{{item.date}}"
+                    mark="{{item.meanMark}}"
+                    comment="{{item.content}}"
+                    ownerReply="{{item.ownerReply}}}"
+                    ownerReplyTime="{{item.ownerReplyStatus}}"
+                    adminReply="{{item.adminReply}}"
+                    adminReplyTime="{{item.adminReplyStatus}}"
+                />
+            </view>  
+        </view>
+      
     </view>
 
         <view class="button">

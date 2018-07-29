@@ -12,8 +12,11 @@
     font-size:14px;
 }
 
-.comment-cards-container {
+.comment-card-container {
     margin-top: 16px;
+}
+.comment-cards-container {
+    margin-bottom: 40px;
 }
 
 .button {
