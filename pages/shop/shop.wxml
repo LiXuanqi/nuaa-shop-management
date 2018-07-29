@@ -33,7 +33,7 @@
             <zan-cell title="货品质量" value="{{qualityMark}}"></zan-cell>
         </view>
         <view class="comment-cards-container">
-            <view class="comment-card-container" wx:for="{{comments}}">
+            <view class="comment-card-container" wx:for="{{comments}}" wx:key="{{item.cid}}">
                 <comment-card
                     username="{{item.username}}"
                     date="{{item.date}}"

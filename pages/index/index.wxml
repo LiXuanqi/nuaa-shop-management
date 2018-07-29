@@ -19,7 +19,7 @@
         <view class="slash"></view>
     </view>
 
-    <view class="cards-container"  wx:for="{{shopsList}}">     
+    <view class="cards-container"  wx:for="{{shopsList}}" wx:key="{{item.sid}}">     
         <shop-card
             sid="{{item.sid}}"
             name="{{item.name}}"

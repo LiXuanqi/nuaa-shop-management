@@ -31,7 +31,7 @@
     />
 
     <view wx:if="{{selectedTabId === '1'}}" class="comment-cards-container">
-        <view class="comment-card-container" wx:for="{{comments}}">
+        <view class="comment-card-container" wx:for="{{comments}}" wx:key="{{item.cid}}">
             <comment-card
                 username="{{item.username}}"
                 date="{{item.date}}"
@@ -46,7 +46,7 @@
     </view>  
 
     <view wx:if="{{selectedTabId === '2'}}" class="comment-cards-container">
-        <view class="comment-card-container" wx:for="{{replyComments}}">
+        <view class="comment-card-container" wx:for="{{replyComments}}" wx:key="{{item.cid}}">
             <comment-card
                 username="{{item.username}}"
                 date="{{item.date}}"
