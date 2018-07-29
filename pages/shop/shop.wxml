@@ -39,7 +39,7 @@
                     date="{{item.date}}"
                     mark="{{item.meanMark}}"
                     comment="{{item.content}}"
-                    ownerReply="{{item.ownerReply}}}"
+                    ownerReply="{{item.ownerReply}}"
                     ownerReplyTime="{{item.ownerReplyStatus}}"
                     adminReply="{{item.adminReply}}"
                     adminReplyTime="{{item.adminReplyStatus}}"

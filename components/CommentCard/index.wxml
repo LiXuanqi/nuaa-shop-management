@@ -19,10 +19,10 @@
         <view class="content">
             {{ comment }}
         </view>
-        <view class="reply">
+        <view wx:if="{{ownerReply}}" class="reply">
              {{ "商家回复(" + ownerReplyTime + "天后)：" + ownerReply }}
         </view>
-        <view class="reply">
+        <view wx:if="{{adminReply}}" class="reply">
              {{ "管委会回复(" + adminReplyTime + "天后)：" + adminReply }}
         </view>
     </view>

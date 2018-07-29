@@ -30,25 +30,35 @@
         bindtabchange="handleTabChanged"
     />
 
-    <view class="comment-cards-container">
-        <comment-card
-            username="Moved"
-            date="2018-05-21"
-            mark="3.7"
-            comment="这是长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长评论。"
-            replyTime="9"
-            reply="尊敬的用户，我们已经收到您的消息，我们已经收到您的消息我们已经收到您的消息。"
-        />
-        <comment-card
-            username="Moved"
-            date="2018-05-21"
-            mark="3.7"
-            comment="这是长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长评论。"
-            replyTime="9"
-            reply="尊敬的用户，我们已经收到您的消息，我们已经收到您的消息我们已经收到您的消息。"
-        />
+    <view wx:if="{{selectedTabId === '1'}}" class="comment-cards-container">
+        <view class="comment-card-container" wx:for="{{comments}}">
+            <comment-card
+                username="{{item.username}}"
+                date="{{item.date}}"
+                mark="{{item.meanMark}}"
+                comment="{{item.content}}"
+                ownerReply="{{item.ownerReply}}"
+                ownerReplyTime="{{item.ownerReplyStatus}}"
+                adminReply="{{item.adminReply}}"
+                adminReplyTime="{{item.adminReplyStatus}}"
+            />
+        </view>  
     </view>  
 
+    <view wx:if="{{selectedTabId === '2'}}" class="comment-cards-container">
+        <view class="comment-card-container" wx:for="{{replyComments}}">
+            <comment-card
+                username="{{item.username}}"
+                date="{{item.date}}"
+                mark="{{item.meanMark}}"
+                comment="{{item.content}}"
+                ownerReply="{{item.ownerReply}}"
+                ownerReplyTime="{{item.ownerReplyStatus}}"
+                adminReply="{{item.adminReply}}"
+                adminReplyTime="{{item.adminReplyStatus}}"
+            />
+        </view>  
+    </view>  
  
   
 
