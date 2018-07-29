@@ -52,13 +52,14 @@ Page({
         this.setData({
           comments: formatedData
         })
-        const replyComments = replyComments.filter((item) => {
+        const replyComments = formatedData.filter((item) => {
           if (item.adminReply || item.ownerReply) {
             return true;
           } else {
             return false;
           }
         });
+
         this.setData({
           replyComments: replyComments
         })
