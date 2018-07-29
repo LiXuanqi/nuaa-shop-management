@@ -4,6 +4,8 @@ const app = getApp();
 
 Page({
   data: {
+    username: '',
+    avatarUrl: '',
     tabList: [{
       id: '1',
       title: '全部评论'
@@ -16,6 +18,11 @@ Page({
     replyComments: []
   },
   onLoad: function () {
+    console.log(app.globalData.userInfo)
+    this.setData({
+      username: app.globalData.userInfo.nickName,
+      avatarUrl: app.globalData.userInfo.avatarUrl
+    })
     wx.setNavigationBarColor({
       frontColor: '#ffffff',
       backgroundColor: '#F9D173',

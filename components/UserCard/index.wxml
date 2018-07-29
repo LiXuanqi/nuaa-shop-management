@@ -7,9 +7,6 @@
                 {{ username }}
             </view>
     
-            <view class="tel">
-                <zan-icon type="phone"></zan-icon>
-                {{ tel }}
-            </view>
+         
         </view>
     </view>

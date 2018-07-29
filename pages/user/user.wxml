@@ -1,9 +1,8 @@
 
 <view class="user-page">
     <user-card
-        username="Move or Die"
-        tel="15632451678"
-        pic="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg"
+        username="{{username}}"
+        pic="{{avatarUrl}}"
     ></user-card>
 <!--
     <view class="reply-action-container">
