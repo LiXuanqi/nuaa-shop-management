@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "搜索",
+  "usingComponents": {
+    "zan-search": "/components/zanui-weapp/dist/search/index",
+    "zan-loadmore": "/components/zanui-weapp/dist/loadmore/index",
+    "zan-toptips": "/components/zanui-weapp/dist/toptips/index",
+    "shop-card": "/components/ShopCard/index"
+    
+  }
+}

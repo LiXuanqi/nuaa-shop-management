@@ -2,10 +2,10 @@
     <view class="text">
         {{ appName }}
     </view>
-    <view class="search-container">
+    <view class="search-container" bindtap="navigateToSearchPage">
         <view class="input-container">
             <zan-icon class="input-icon" type="edit"></zan-icon>
-            <input class="input" placeholder="输入商家/商圈" auto-focus/> 
+            <span class="input">输入商家/商圈</span>
         </view>   
     </view>
 </view>
