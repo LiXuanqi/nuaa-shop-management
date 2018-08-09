@@ -43,12 +43,13 @@ Page({
       wx.request({
         url: `https://nuaashop.yuwenjie.cc/?service=App.Shop.GetShop&id=${sid}`,
         success: ({ data }) => {
-          const { sid, name, intro, tel, category, address, workStartTime, workEndTime, meanMark, envMark, serviceMark, qualityMark} = data['data'];
+          const { sid, name, intro, tel, pic, category, address, workStartTime, workEndTime, meanMark, envMark, serviceMark, qualityMark} = data['data'];
           this.setData({
             sid: sid,
             name: name,
             intro: intro,
             tel: tel,
+            pic: pic,
             category: category,
             position: address,
             workTime: `${workStartTime} ~ ${workEndTime}`,

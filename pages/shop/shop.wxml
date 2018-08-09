@@ -4,6 +4,7 @@
         category="{{ category }}"
         intro="{{ intro }}"
         tel="{{ tel }}"
+        pic="{{ pic }}"
     ></intro-card>
     <zan-tab
         list="{{ tabList }}"

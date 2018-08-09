@@ -1,6 +1,6 @@
 <view class="comment-card">
     <view>
-       <image class="icon" src="/static/avatar.jpg" />
+       <image class="icon" src="/static/avatar.png" />
     </view>
     <view class="right-container">
         <view class="top-container"> 

@@ -39,7 +39,6 @@ Page({
     }
   },
   getUserInfo: function(e) {
-    console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
@@ -52,7 +51,9 @@ Page({
       success: ({ data }) => {
         console.log(data)
         this.setData({
-          shopsList: data['data']
+          shopsList: data['data'].filter((item) => {
+            return item.status === "2" // the shop check pass.
+          })
         })
       }
     })

@@ -11,6 +11,9 @@ Component({
       },
       tel: {
         type: String
+      },
+      pic: {
+        type: String
       }
     },
     data: {
