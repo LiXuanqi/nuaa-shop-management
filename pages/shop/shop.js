@@ -67,8 +67,6 @@ Page({
         success: ({ data }) => {
           console.log(data)
           let formatedData = data['data'].map((item) => {
-            console.log(item.adminReplyStatus);
-            console.log(item.ownerReplyStatus);
             return {
               ...item,
               date: item.date.split(" ")[0],
@@ -76,9 +74,10 @@ Page({
               ownerReplyStatus: moment(parseInt(item.ownerReplyStatus)).startOf('day').fromNow().split(" ")[0],
             }
           }) 
-          console.log(formatedData)
           this.setData({
-            comments: formatedData
+            comments: formatedData.filter((item) => {
+              return item.status !== "0" && item.status !== "1"
+            })
           })
         }
       })
@@ -91,7 +90,7 @@ Page({
     },
     handleButtonClicked: function() {
       wx.navigateTo({
-        url: '/pages/form/form?sid=' + this.data.sid
+        url: `/pages/form/form?sid=${this.data.sid}&pic=${this.data.pic}`
       })
     }
   })

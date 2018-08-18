@@ -2,11 +2,13 @@ const app = getApp();
 
 Page({
     data: {
-      sid: null
+      sid: null,
+      pic: ''
     },
     onLoad: function (query) {
       this.setData({
-        sid: query.sid
+        sid: query.sid,
+        pic: query.pic
       });
       console.log(query.sid);
       console.log(app.globalData.userInfo)

@@ -12,6 +12,23 @@ Page({
       }
     }
   },
+  onLoad(query) {
+    const queryCategory = query.category;
+    wx.request({
+      url: 'https://nuaashop.yuwenjie.cc/?service=App.Shop.GetShopsByTag',
+      method: "POST",
+      data: {
+        tag: queryCategory
+      },
+      success: ({ data }) => {
+        console.log(data);
+        this.setData({
+          shopsList: data['data']
+        })
+        console.log(this.data.shopsList)
+      }
+    })
+  },
   searchChange(e) {
     this.setData({
       inputValue: e.detail.value

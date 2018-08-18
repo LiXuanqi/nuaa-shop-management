@@ -3,12 +3,11 @@
     <header></header>
     <view class="categories-container">
         <category-icon icon="points" text="美食"></category-icon>
-        <category-icon icon="logistics" iconColor="linear-gradient(120deg, #f6d365 0%, #fda085 100%)" text="文印"></category-icon>
-        <category-icon icon="gift" text="杂货"></category-icon>
-        <category-icon icon="wap-home" text="生活"></category-icon>
+        <category-icon icon="cart" text="超市"></category-icon>
+        <category-icon icon="gift" text="生鲜果蔬"></category-icon>
+        <category-icon icon="wap-home" text="餐饮"></category-icon>
+        <category-icon icon="free-postage" text="甜点饮品"></category-icon>
         <category-icon icon="free-postage" text="生活"></category-icon>
-        <category-icon icon="shop-collect" text="生活"></category-icon>
-        <category-icon icon="after-sale" text="生活"> </category-icon>
     </view>
 
     <view class="cards-container-title">

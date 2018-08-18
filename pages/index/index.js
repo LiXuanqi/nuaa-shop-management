@@ -52,7 +52,7 @@ Page({
         console.log(data)
         this.setData({
           shopsList: data['data'].filter((item) => {
-            return item.status === "2" // the shop check pass.
+            return item.status !== "1" && item.status !== "0" // the shop check pass.
           })
         })
       }
