@@ -67,7 +67,9 @@ Page({
       success: ({ data }) => {
         console.log(data);
         this.setData({
-          shopsList: data['data']
+          shopsList: data['data'].filter((item) => {
+            return item.status !== "1" && item.status !== "0" // the shop check pass.
+          })
         })
         console.log(this.data.shopsList)
 
