@@ -1,6 +1,8 @@
 .shop-page {
     background-color: #F4F4F4;
-    height: 100vh;
+    width: 100vw;
+    heigt: 100vh;
+    overflow: hidden;
 }
 .cell {
     margin-top: 16px;
