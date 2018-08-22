@@ -9,7 +9,6 @@
         <category-icon icon="free-postage" text="甜点饮品"></category-icon>
         <category-icon icon="free-postage" text="生活"></category-icon>
     </view>
-
     <view class="cards-container-title">
         <view class="slash"></view>
         <view class="text">
@@ -17,7 +16,6 @@
         </view>
         <view class="slash"></view>
     </view>
-
     <view class="cards-container"  wx:for="{{shopsList}}" wx:key="{{item.sid}}">     
         <shop-card
             sid="{{item.sid}}"

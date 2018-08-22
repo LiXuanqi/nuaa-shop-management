@@ -43,7 +43,6 @@
             />
         </view>  
     </view>  
-
     <view wx:if="{{selectedTabId === '2'}}" class="comment-cards-container">
         <view class="comment-card-container" wx:for="{{replyComments}}" wx:key="{{item.cid}}">
             <comment-card
