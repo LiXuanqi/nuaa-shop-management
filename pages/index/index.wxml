@@ -12,7 +12,7 @@
     <view class="cards-container-title">
         <view class="slash"></view>
         <view class="text">
-            附近商家
+            附近网点
         </view>
         <view class="slash"></view>
     </view>

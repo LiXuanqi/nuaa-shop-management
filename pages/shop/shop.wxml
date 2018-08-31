@@ -11,7 +11,7 @@
         selected-id="{{ selectedTabId }}"
         bindtabchange="handleTabChanged"
     />
-    <!-- 商家 -->
+    <!-- 网点 -->
     <view wx:if="{{ selectedTabId === '1' }}">
         <view class="cell">
             <zan-cell title="电话" value="{{ tel }}"></zan-cell>

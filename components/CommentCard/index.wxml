@@ -20,7 +20,7 @@
             {{ comment }}
         </view>
         <view wx:if="{{ownerReply}}" class="reply">
-             {{ "商家回复(" + ownerReplyTime + "天后)：" + ownerReply }}
+             {{ "网点回复(" + ownerReplyTime + "天后)：" + ownerReply }}
         </view>
         <view wx:if="{{adminReply}}" class="reply">
              {{ "管委会回复(" + adminReplyTime + "天后)：" + adminReply }}

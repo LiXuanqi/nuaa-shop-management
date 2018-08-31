@@ -5,7 +5,7 @@
     <view class="search-container" bindtap="navigateToSearchPage">
         <view class="input-container">
             <zan-icon class="input-icon" type="edit"></zan-icon>
-            <span class="input">输入商家/商圈</span>
+            <span class="input">输入网点/区域</span>
         </view>   
     </view>
 </view>

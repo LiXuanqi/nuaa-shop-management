@@ -16,7 +16,7 @@ Page({
       comments: [],
       tabList: [{
         id: '1',
-        title: '商家'
+        title: '网点'
       }, {
         id: '2',
         title: '评价'
