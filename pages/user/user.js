@@ -1,7 +1,6 @@
 import moment from '../../utils/moment';
-
+moment.locale('zh-cn');
 const app = getApp();
-
 Page({
   data: {
     username: '',
@@ -52,11 +51,12 @@ Page({
           },
           success: ({ data }) => {
             let formatedData = data['data'].map((item) => {
+              console.log(moment.unix(parseInt(item.adminReplyStatus)).startOf('day').fromNow())
               return {
                 ...item,
                 date: item.date.split(" ")[0],
-                adminReplyStatus: moment(parseInt(item.adminReplyStatus)).startOf('day').fromNow().split(" ")[0], // calculate interval of days.
-                ownerReplyStatus: moment(parseInt(item.ownerReplyStatus)).startOf('day').fromNow().split(" ")[0],
+                adminReplyStatus: moment.unix(parseInt(item.adminReplyStatus)).startOf('day').fromNow(), // calculate interval of days.
+                ownerReplyStatus: moment.unix(parseInt(item.ownerReplyStatus)).startOf('day').fromNow(),
               }
             }) 
             console.log(formatedData)

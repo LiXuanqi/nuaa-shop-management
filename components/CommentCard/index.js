@@ -18,13 +18,13 @@ Component({
         type: String
       },
       ownerReplyTime: {
-        type: Number
+        type: String
       },
       adminReply: {
         type: String
       },
       adminReplyTime: {
-        type: Number
+        type: String
       }
     },
     data: {
