@@ -14,10 +14,10 @@
             <view class="intro">
                 {{ intro }}
             </view>  
-            <view class="tel">
+            <!-- <view class="tel">
             <zan-icon type="phone"></zan-icon>
             {{ tel }}
-            </view>
+            </view> -->
         </view>
     </view>
     <slot></slot>
